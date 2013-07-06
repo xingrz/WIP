@@ -1,5 +1,6 @@
 ﻿function getForm()
 {
+alert("getting");
     $.ajax({
         type: "POST",
         url: "http://10.23.23.44:3488/FormHandler.aspx/GetForm",
