@@ -49,12 +49,15 @@ var app = {
     },
 };
 
-$( ".alertButton" ).bind( "click", function() {
-  alert("Alert!");
-});
+function alertButtonClick()
+{
+alert("Alert!");
+}
 
-$( ".scanButton" ).bind( "click", function() {
+function scanButtonClick()
+{
         alert("Scan button clicked");
+        
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan(function (result) {
@@ -66,6 +69,4 @@ $( ".scanButton" ).bind( "click", function() {
 		    alert("Scanning failed: " + error);
 		}
 	    );
-});
-
-
+}
