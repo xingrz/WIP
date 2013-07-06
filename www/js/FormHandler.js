@@ -1,4 +1,6 @@
-﻿function getForm()
+﻿alert("FORMHANDLER");
+
+function getForm()
 {
     alert("Getform start");
     $.ajax({
