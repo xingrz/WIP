@@ -1,6 +1,6 @@
 ﻿function getForm()
 {
-alert("getting");
+    alert("Getform start");
     $.ajax({
         type: "POST",
         url: "http://10.23.23.44:3488/FormHandler.aspx/GetForm",
@@ -12,6 +12,7 @@ alert("getting");
             $("#Result").html(msg.d).trigger("create");
         }
     });
+    alert("Getform end");
 }
 
 function submitForm() {
@@ -30,4 +31,3 @@ function submitForm() {
     });
 }
 
-$(document).ready(getForm());
