@@ -47,7 +47,13 @@ var app = {
 
         console.log('Received Event: ' + id);
     },
-    scan: function () {
+};
+
+$( ".alertButton" ).bind( "click", function() {
+  alert("Alert!");
+});
+
+$( ".scanButton" ).bind( "click", function() {
         alert("Scan button clicked");
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
@@ -59,8 +65,7 @@ var app = {
 		function (error) {
 		    alert("Scanning failed: " + error);
 		}
-	);
-    }
+	    );
+});
 
 
-};
