@@ -20,7 +20,6 @@ var app = {
     // Application Constructor
     initialize: function () {
         this.bindEvents();
-	alert("init");
     },
     // Bind Event Listeners
     //
@@ -28,7 +27,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-	alert("bind");
     },
     // deviceready Event Handler
     //
@@ -36,12 +34,8 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');        
-	alert("onDevRed");
     },
     // Update DOM on a Received Event
-    receivedEvent: function (id) {
-	alert("RecEvent");        
-        getForm();
-	alert("got form");        
-    },
+    receivedEvent: function (id) {	    	
+    }
 };
